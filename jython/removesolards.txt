@@ -1,0 +1,24 @@
+import sys, java
+
+def removeds (abIdent):
+
+   ds =  AdminConfig.getid('/Cell:psm-cell/ServerCluster:jservices-cluster-' + abIdent + '/JDBCProvider:Oracle JDBC Driver (XA)/DataSource:Orca Datasource/')  
+
+   AdminConfig.remove(ds)
+ 
+   AdminConfig.save()
+
+#-----------------------------------------------------------------
+# Main
+#-----------------------------------------------------------------
+if (len(sys.argv) < 2 ):
+
+   print "removeds: this script requires 1 parameters: "  
+   print " a/b identifier"
+   print "e.g.:     removeds.py a "
+
+else:
+ 
+      removeds(sys.argv[0])
+   
+#endif
