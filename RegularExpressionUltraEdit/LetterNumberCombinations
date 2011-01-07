@@ -1,0 +1,15 @@
+Regular Expression:
+%^(*^)^*^([0-9]*^)/^([0-9]*^)$
+
+Replacement:
+set_solarstage_enddate( '^1', '^2', '^3', 'B' );
+
+Example Dataset:
+
+AC*7916/01
+BP*0707/37
+CY*5233/09
+CY*5233/10
+CY*5611/52
+CY*6422/20
+
