@@ -1,3 +1,4 @@
+Example regular expressions used to search and replace characters in a commonly seen data set.
 Regular Expression:
 %^(*^)^*^([0-9]*^)/^([0-9]*^)$
 
